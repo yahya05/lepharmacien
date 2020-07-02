@@ -106,7 +106,7 @@ class Garde_D extends React.Component{
       }
       this.state.city=this.state.temp
       .filter(function(item){
-        return item.name.includes(searchTxt)
+        return item.name.startsWith(searchTxt)
       })
       .map(function({key,latitude,longitude,name}){
         return {key,latitude,longitude,name};

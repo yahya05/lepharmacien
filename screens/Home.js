@@ -20,7 +20,7 @@ class Home extends React.Component{
       name:null,
       adress:null,
       num:'05228-52959',
-      type:'pharma',
+      type:'',
       people: [{ name: 'CORONA', date: '14/10/1998', titre: "Faire ses courses au temps du Covid-19", key: '1' },
       { name: 'CORONA', date: '14/10/1998', titre: "Faire ses courses au temps du Covid-19", key: '2' },
       { name: 'CORONA', date: '14/10/1998', titre: "Faire ses courses au temps du Covid-19", key: '3' }
@@ -81,14 +81,14 @@ return (`${url}${location}${typeData}${key}`);
       { name: 'CORONA', date: '14/10/1998', titre: "Faire ses courses au temps du Covid-19", key: '2' },
       { name: 'CORONA', date: '14/10/1998', titre: "Faire ses courses au temps du Covid-19", key: '3' }
       ],
-  nom:null
+  nom:'mar'
 }
     
     return (
       <View style={GlobalStyles.container}>
          <View style={GlobalStyles.header} >
           <Image source={require('../assets/logo.png')}  style={{marginBottom:5}} />
-<Text style={{color:"#008A00",fontWeight:"bold",fontSize:18}}> LePharmacien</Text>
+<Text style={{color:"#008A00",fontWeight:"bold",fontSize:33}}> LePharmacien</Text>
         </View>
       <ScrollView>
       {this.state.nom ?    this.state.type=='pharma' ? <View style={GlobalStyles.panel_cnx} >
@@ -101,8 +101,8 @@ return (`${url}${location}${typeData}${key}`);
     </View>
     </View>
 
-    <View  style={{ marginLeft:"3%"}} >
-        <Text style={{color:"red",paddingTop:"4%",fontSize:16}}>mon etat </Text>
+    <View  style={{ marginLeft:"10%"}} >
+        <Text style={{color:"red",paddingTop:"4%",fontSize:19}}>mon etat </Text>
 
         <View style={{ marginLeft:"3%", flexDirection:'row',alignItems:"center",justifyContent:"space-around"}}>
         <Text  style={{fontSize:25}} >mon num</Text>
@@ -112,7 +112,7 @@ return (`${url}${location}${typeData}${key}`);
 
 </View>
 
-<View style={{marginTop:"10%",marginBottom:"2%"}}>
+<View style={{marginTop:"10%",marginBottom:"8%"}}>
   
     <TouchableOpacity  onPress={() => this.props.navigation.navigate('Garde')} >
     <Text style={{color:"#008A00",alignSelf:"center",fontSize:17,fontWeight:"bold",paddingBottom:0}}>TROUVER UNE PHARMACIE</Text>
@@ -131,8 +131,8 @@ return (`${url}${location}${typeData}${key}`);
     </View>
     </View>
 
-    <View  style={{ marginLeft:"3%"}} >
-        <Text style={{color:"red",paddingTop:"4%",fontSize:16}}>{this.state.etat} </Text>
+    <View  style={{ marginLeft:"13%"}} >
+        <Text style={{color:"red",paddingTop:"4%",fontSize:19,fontWeight:"900"}}>{this.state.etat} </Text>
 
         <View style={{ marginLeft:"3%", flexDirection:'row',alignItems:"center",justifyContent:"space-around"}}>
         <Text  style={{fontSize:25}} >{this.state.num}</Text>
@@ -142,7 +142,7 @@ return (`${url}${location}${typeData}${key}`);
 
 </View>
 
-<View style={{marginTop:"10%",marginBottom:"2%"}}>
+<View style={{marginBottom:"5%",marginTop:"5%"}}>
   
     <TouchableOpacity  onPress={() => this.props.navigation.navigate('Garde')} >
     <Text style={{color:"#008A00",alignSelf:"center",fontSize:17,fontWeight:"bold",paddingBottom:0}}>TROUVER UNE PHARMACIE</Text>

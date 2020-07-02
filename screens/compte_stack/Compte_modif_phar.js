@@ -35,12 +35,12 @@ const Compte_modif_phar=({navigation}) =>{
         <View style={{ marginBottom:20}}>
         <Image source={require('../../assets/HH.png')} style={{alignSelf:"center",height:200,width:200}}  />
 
-            <Text  style={{  color:'grey',fontSize:19,paddingLeft:3,textAlign:"center"}}>
+            <Text  style={{  color:'grey',fontSize:19,paddingLeft:3,textAlign:"center",paddingTop:15}}>
                 NOM PHARMACIE
             </Text>
         </View>
         <View  >
-            <TextInput style={{backgroundColor:'white'}}  placeholder="Types de votre pharmacie" 
+            <TextInput style={{backgroundColor:'white'}}  placeholder="Type de votre pharmacie" 
         underlineColorAndroid="transparent"
             />
               <TextInput style={{backgroundColor:'white'}} placeholder="Adresse" 
@@ -53,7 +53,7 @@ const Compte_modif_phar=({navigation}) =>{
         underlineColorAndroid="transparent"
             />
       
-        <TouchableOpacity   >
+        <TouchableOpacity  style={{marginTop:25}}  >
         <View style={GlobalStyles.buttonb_C}>
             <Text style={GlobalStyles.buttonText}>SAUVGARDER</Text>
             

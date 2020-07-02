@@ -97,7 +97,7 @@ export default  App=()=> {
         if (route.name === 'Produit') {
           iconName = focused ? require('./assets/drug.png') : require('./assets/MED.png');
         }
-       else if (route.name === 'Recherche') {
+       else if (route.name === 'Pharmacie') {
           iconName = focused ? require('./assets/lg.png') : require('./assets/l.png');
         }
         else if (route.name === 'Home') {
@@ -135,7 +135,7 @@ export default  App=()=> {
       
       
       />
-      <MaterialBot.Screen name="Recherche" component={Recherche}
+      <MaterialBot.Screen name="Pharmacie" component={Recherche}
       
       />
        <MaterialBot.Screen name="Garde" component={Garde}

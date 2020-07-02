@@ -140,7 +140,7 @@ render(){
             </View>
 
             <View style={{marginVertical:19}}>
-    <TouchableOpacity  onPress={()=>navigation.navigate('modifav')}>
+    <TouchableOpacity  onPress={()=>this.props.navigation.navigate('modifav')}>
     <Text style={{color:"#008A00",alignSelf:"center",fontSize:17,fontWeight:"bold"}}>MODIFIER MA PHARMACIE REFERENTE</Text>
      </TouchableOpacity>
     </View>

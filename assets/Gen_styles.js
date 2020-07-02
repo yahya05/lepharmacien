@@ -176,8 +176,8 @@ panel:{
 
 },
 sugges:{
-  paddingBottom:"13%",
-  paddingTop:"3%"
+  paddingBottom:"9%",
+  paddingTop:"6%"
 },
 compte:{
  

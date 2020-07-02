@@ -34,7 +34,7 @@ const Compte_D=({navigation}) =>{
         <View style={{ marginBottom:20}}>
         <Image source={require('../../assets/HH.png')} style={{alignSelf:"center",height:200,width:200}}  />
 
-            <Text  style={{  color:'grey',fontSize:19,paddingLeft:3,textAlign:"center"}}>
+            <Text  style={{  color:'grey',fontSize:19,paddingLeft:3,textAlign:"center",paddingTop:15}}>
                 0673914985
             </Text>
         </View>
@@ -69,8 +69,8 @@ const Compte_D=({navigation}) =>{
                  </View>
                  </View>
             </TouchableOpacity>
-        </View>
-        <TouchableOpacity   >
+        </View >
+        <TouchableOpacity style={{marginTop:25}}    >
         <View style={GlobalStyles.buttonb_C}>
             <Text style={GlobalStyles.buttonText}>SAUVGARDER</Text>
             
@@ -79,11 +79,7 @@ const Compte_D=({navigation}) =>{
     </TouchableOpacity>
 
 
-    <View style={{marginVertical:19}}>
-    <TouchableOpacity>
-    <Text style={{color:"red",alignSelf:"center",fontSize:17,fontWeight:"bold"}}>SUPPRIMER MON COMPTE</Text>
-     </TouchableOpacity>
-    </View>
+
           </View>
         </ScrollView>
 

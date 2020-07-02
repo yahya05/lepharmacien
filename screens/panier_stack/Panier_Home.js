@@ -10,7 +10,7 @@ class Panier_Home extends React.Component{
         super()
         this.state={
           nom:'marwan',
-        ordo:'',type:'pharma',com:''}}
+        ordo:'',type:'',com:''}}
   render(){
 
 

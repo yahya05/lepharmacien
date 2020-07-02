@@ -41,7 +41,7 @@ render(){
       
       <View  style={GlobalStyles.header_Back}  >
 
-        <TouchableOpacity onPress={()=>navigation.goBack()}>
+        <TouchableOpacity onPress={()=>this.props.navigation.goBack()}>
         <Image source={require('../../assets/back.png')} style={GlobalStyles.back}  />
 
         </TouchableOpacity>
@@ -68,7 +68,7 @@ backgroundColor:"white",
 
           <TouchableOpacity onPress={this.selectImage}>
               <View style={{padding:10}}>
-              <Image source={require('../../assets/reser.png')}  style={{alignSelf:"center",marginHorizontal:9,height:60,width:60}} />
+              <Image source={require('../../assets/camera.png')}  style={{alignSelf:"center",marginHorizontal:9,height:40,width:40}} />
 
               </View>
 

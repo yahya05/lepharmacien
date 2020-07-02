@@ -9,8 +9,8 @@ class Compte_Home extends React.Component{
   constructor(){
     super()
     this.state={
-      nom:'',
-    type:''}}
+      nom:'kk',
+    type:'pharma'}}
       render(
      
       ){
@@ -70,7 +70,7 @@ class Compte_Home extends React.Component{
               <View  style={GlobalStyles.compte_g} >
                   <View style={GlobalStyles.compte}>
                       <View style={{borderWidth:2,borderColor:'#E9E9E9',borderRadius:100,paddingVertical:9,backgroundColor:'#F2F2F2',marginLeft:9}} >
-                      <Image source={require('../../assets/FAV.png')}  style={{marginHorizontal:9,height:20,width:20,borderRadius:100,}} />
+                      <Image source={require('../../assets/cross.png')}  style={{marginHorizontal:9,height:25,width:25,borderRadius:100,}} />
 
                       </View>
                       <View style={{marginLeft:5}}>
@@ -123,85 +123,13 @@ class Compte_Home extends React.Component{
                 </View>
            </TouchableOpacity>
        </View>
-       <View style={styles.view1}>
-         <Text style={styles.text1} >MES ADRESSES ENREGISTREES </Text>
-       </View>
-       <View style={{borderBottomColor:"#E0E0E0",borderBottomWidth:1}} >
-           <TouchableOpacity   onPress={()=>this.props.navigation.navigate('adresse')}>
-               <View  style={GlobalStyles.compte_g} >
-                   <View style={GlobalStyles.compte}>
-                       <View style={{borderWidth:2,borderColor:'#E9E9E9',borderRadius:100,paddingVertical:9,backgroundColor:'#F2F2F2',marginLeft:9}} >
-                       <Image source={require('../../assets/home_c.png')}  style={{marginHorizontal:9,height:20,width:20,borderRadius:100,}} />
-
-                       </View>
-                       <View style={{marginLeft:5}}>
-                       <Text >DOMICILE</Text>
-                       </View>
-                       
-
-
-                   </View>
-         
-              
-
-                <View   >
-                <Image source={require('../../assets/next_g.png')} style={{alignSelf:"center",height:20,width:20}}  />
-
-                </View>
-                </View>
-           </TouchableOpacity>
-       </View>
-       <View style={{borderBottomColor:"#E0E0E0",borderBottomWidth:1}} >
-           <TouchableOpacity  onPress={()=>this.props.navigation.navigate('adresse')}>
-               <View  style={GlobalStyles.compte_g} >
-                   <View style={GlobalStyles.compte}>
-                       <View style={{borderWidth:2,borderColor:'#E9E9E9',borderRadius:100,paddingVertical:9,backgroundColor:'#F2F2F2',marginLeft:9}} >
-                       <Image source={require('../../assets/work_c.png')}  style={{marginHorizontal:9,height:20,width:20,borderRadius:100,}} />
-
-                       </View>
-                       <View style={{marginLeft:5}}>
-                       <Text >Travail</Text>
-                       </View>
-                       
-
-
-                   </View>
-         
-              
-
-                <View   >
-                <Image source={require('../../assets/next_g.png')} style={{alignSelf:"center",height:20,width:20}}  />
-
-                </View>
-                </View>
-           </TouchableOpacity>
-       </View>
+      
+       
      </View> }
      
-        <View style={styles.view1}>
-          <Text style={styles.text1} >SUIVI DE VOS RESERVATIONS </Text>
-        </View>
-        <View style={{borderBottomColor:"#E0E0E0",borderBottomWidth:1}} >
+     
             
-                <View  style={GlobalStyles.compte_g} >
-                    <View style={GlobalStyles.compte}>
-                        
-                        <View style={{marginLeft:5}}>
-                        <Text >Par notification push</Text>
-                        </View>
-                        
-
-
-                    </View>
-          
-               
-
-                 <View   >
-              
-                 </View>
-                 </View>
-            
-        </View>
+      
     <View style={{marginVertical:19}}>
     <TouchableOpacity>
     <Text style={{color:"#008A00",alignSelf:"center",fontSize:17,fontWeight:"bold"}}>SE DECONNECTER</Text>
@@ -213,17 +141,21 @@ class Compte_Home extends React.Component{
       
       <View >
       <View>
-
+      <View style={{ flexDirection:"row", alignSelf:"center",marginTop:"60%",}} >
+          <Image source={require('../../assets/logo.png')}  style={{marginBottom:5}} />
+<Text style={{color:"#008A00",fontWeight:"bold",fontSize:33}}> LePharmacien</Text>
+        </View>
       <View style={{  alignItems:'center',
  borderRadius:10,
  alignSelf:"center",
  backgroundColor:'white',
  paddingVertical:5,
  padding:30,
- marginTop:"60%",
+
  borderColor:'#E9E9E9',
  borderWidth:1
  }} >
+   
         <View  style={GlobalStyles.sugges}>
         <Text style={GlobalStyles.conn}> Pour bénéficier de la totalité des</Text>
       <Text style={GlobalStyles.conn}>  fonctionnalités de votre pharmacien,</Text> 
